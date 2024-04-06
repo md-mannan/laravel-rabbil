@@ -1,11 +1,9 @@
 <?php
 
-use App\Http\Controllers\SiteController;
+use App\Http\Controllers\DemoController;
 use Illuminate\Support\Facades\Route;
 
-//Routing with Controller & View
+//Paramiter with Hyper link
 
 
-Route::get('/', [SiteController::class, 'Home']);
-Route::get('/about', [SiteController::class, 'About']);
-Route::get('/contact', [SiteController::class, 'Contact']);
+Route::get('/name/{x}', [DemoController::class, 'MyName']);
