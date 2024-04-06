@@ -13,7 +13,7 @@
 
     <hr>
     <nav class="nav flex-column">
-
+        <!-- Basic Routing with hyperlink -->
         <a class="nav-link btn-primary" href="{{url('/')}}">Home</a>
         <a class="nav-link btn-primary" href="{{url('/about')}}">About</a>
         <a class="nav-link btn-primary" href="{{url('/contact')}}">Contact</a>
