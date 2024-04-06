@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    //For Each Loop in Blade view
+    //For else Loop in Blade view
 
 
     function ShowHome()
