@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-// // Resource Controller GET only
+// Blade view
 
-Route::resource('/photos', PhotoController::class);
+
+Route::get('/', [HomeController::class, 'ShowHome']);

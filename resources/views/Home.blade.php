@@ -10,9 +10,9 @@
 
 <body class="">
     <div class="container ">
-        <h1 class="alert alert-success mt-5">Home Page</h1>
+        <h1 class="alert alert-success mt-5">Blade view</h1>
         <div class="card">
-            <h2 class="card-title">This is a Single Action Controller</h2>
+            <h2 class="card-title">This is a First Blade view Template</h2>
             <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident dolores sit rem ipsum quasi quae doloribus eveniet consequatur laboriosam porro aliquam veritatis dolorum ad, quo nisi cupiditate! Ducimus, earum ut.</div>
         </div>
 
