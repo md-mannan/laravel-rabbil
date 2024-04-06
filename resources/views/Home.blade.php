@@ -12,7 +12,9 @@
     <div class="container ">
         <h1 class="alert alert-success mt-5">Blade view</h1>
         <div class="card">
-            <h2 class="card-title">This is a First Blade view Template</h2>
+            <!--   //Pass data and Display in Blade view -->
+            {{$headlineKey}}
+            {!!$alertKey!!}
             <div class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident dolores sit rem ipsum quasi quae doloribus eveniet consequatur laboriosam porro aliquam veritatis dolorum ad, quo nisi cupiditate! Ducimus, earum ut.</div>
         </div>
 
