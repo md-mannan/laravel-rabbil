@@ -1,9 +1,15 @@
 <?php
 
-use App\Http\Controllers\DemoController;
+use App\Http\Controllers\AccountController;
 use Illuminate\Support\Facades\Route;
 
-//Basic Routing with Multiple Paramiter with Controller & View
+// Routing Group
 
+Route::group(['prefix' => 'account'], function () {
 
-Route::get('/name/{FirstName}/{MiddleName}/{LastName}', [DemoController::class, 'MyName']);
+    Route::get('profile', [AccountController::class, 'Profile']);
+    Route::get('update', [AccountController::class, 'UpdateProfile']);
+    Route::get('signup', [AccountController::class, 'Signup']);
+    Route::get('login', [AccountController::class, 'Login']);
+    Route::get('logout', [AccountController::class, 'Logout']);
+});

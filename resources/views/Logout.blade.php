@@ -9,11 +9,17 @@
 </head>
 
 <body>
-    <!-- //Basic Routing with Multiple Paramiter with Controller & View -->
-    <h1 class="alert alert-success">Your Name is {{$firstname}} {{$middlename}} {{$lastname}} </h1>
+    <h1 class="alert alert-success">Logout Page</h1>
 
     <hr>
+    <nav class="nav flex-column">
 
+        <a class="nav-link btn-primary" href="{{url('/account/profile')}}">Profile</a>
+        <a class="nav-link btn-primary" href="{{url('/account/update')}}">Update Profile</a>
+        <a class="nav-link btn-primary" href="{{url('/account/signup')}}">Signup</a>
+        <a class="nav-link btn-primary" href="{{url('/account/login')}}">Login</a>
+        <a class="nav-link btn-primary" href="{{url('/account/logout')}}">Logout</a>
+    </nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
