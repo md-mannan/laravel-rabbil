@@ -16,15 +16,8 @@
             <!-- For loop with Blade View -->
 
             <div class="card-body">
-
-                <ol>
-                    <!-- if Empty -->
-                    @forelse ( $CityKey as $City )
-                    <li>{{$City}}</li>
-                    @empty
-                    <p>Data Not Found</p>
-                    @endforelse
-                </ol>
+                <!-- For if and ifelse else in Blade view -->
+                @if($LoginStatusKey==true)
                 <ol>
                     <!-- if Data Available -->
                     @forelse ( $CountryKey as $Country )
@@ -33,6 +26,14 @@
                     <p>Data Not Found</p>
                     @endforelse
                 </ol>
+                @elseif ($LoginStatusKey==false)
+                <h3>Please Login First</h3>
+
+                @else
+                <h3>Login Status Not Found</h3>
+
+
+                @endif
             </div>
         </div>
 

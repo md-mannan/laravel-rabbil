@@ -6,14 +6,15 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    //For else Loop in Blade view
+    //For if and ifelse else in Blade view
 
 
     function ShowHome()
     {
-        $City = array(/*'Dhaka', 'Comilla', 'Noakhali', 'Chandpur', 'Laksmipur', 'Sylhet'*/);
-        $Country = array('Bangladesh', 'India', 'Pakistan', 'Srilanka', 'Nepal', 'Bhutan');
 
-        return view('Home', ['CityKey' => $City, 'CountryKey' => $Country]);
+        $Country = array('Bangladesh', 'India', 'Pakistan', 'Srilanka', 'Nepal', 'Bhutan');
+        $LoginStatus = true;
+
+        return view('Home', ['CountryKey' => $Country, 'LoginStatusKey' => $LoginStatus]);
     }
 }
