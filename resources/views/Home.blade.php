@@ -10,24 +10,18 @@
 
 <body class="">
     <div class="container ">
-        <h1 class="alert alert-success mt-5">For Loop in Blade view</h1>
+        <h1 class="alert alert-success mt-5">ForEach loop in Blade view</h1>
         <div class="card">
 
             <!-- For loop with Blade View -->
 
             <div class="card-body">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident dolores sit rem ipsum quasi quae doloribus eveniet consequatur laboriosam porro aliquam veritatis dolorum ad, quo nisi cupiditate! Ducimus, earum ut.</p>
 
-
-                <div class="d-flex flex-wrap m-2">
-                    @for($i=1 ;$i<=5;$i++) <button class="btn btn-primary m-2">Button{!!$i!!}</button>
-                        @endfor
-                </div>
-                <div class="d-flex flex-wrap m-2">
-                    @for($i=1 ;$i
-                    <=10;$i++) <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNW5jk4W1waBh8S41qae9-jItJfhgYenKoAmk5CflEjg&s" class="img-thumbnail m-2" />
-                    @endfor
-                </div>
+                <select>
+                    @foreach ($dataKey as $data )
+                    <option>{{$data}}</option>
+                    @endforeach
+                </select>
             </div>
         </div>
 

@@ -6,14 +6,13 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    //Pass data and Display in Blade view
+    //For Each Loop in Blade view
 
 
     function ShowHome()
     {
-        $NewHeading = '<h1 class="card-title">Bangladesh Won by 100 runs with Newziland</h1>';
-        $alert = '<script class="card-title">alert("You are Hacked");</script>';
+        $data = array('Dhaka', 'Comilla', 'Noakhali', 'Chandpur', 'Laksmipur', 'Sylhet');
 
-        return view('Home', ['headlineKey' => $NewHeading, 'alertKey' => $alert]);
+        return view('Home', ['dataKey' => $data]);
     }
 }
