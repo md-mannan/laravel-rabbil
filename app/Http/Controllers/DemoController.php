@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class DemoController extends Controller
 {
-    //Paramiter with Hyper link
-    function MyName($name)
+    //Basic Routing with Multiple Paramiter with Hyper link
+    function MyName($fname, $mname, $lname)
     {
-        return 'My Name is ' . $name;
+        return 'My Name is ' . $fname . ' ' . $mname . ' ' . $lname;
     }
 }

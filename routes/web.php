@@ -3,7 +3,7 @@
 use App\Http\Controllers\DemoController;
 use Illuminate\Support\Facades\Route;
 
-//Paramiter with Hyper link
+//Basic Routing with Multiple Paramiter with Hyper link
 
 
-Route::get('/name/{x}', [DemoController::class, 'MyName']);
+Route::get('/name/{FirstName}/{MiddleName}/{LastName}', [DemoController::class, 'MyName']);
