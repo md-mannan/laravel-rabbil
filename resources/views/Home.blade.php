@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <h1 class="alert alert-success">$name</h1>
+    <!-- //Basic Routing with Multiple Paramiter with Controller & View -->
+    <h1 class="alert alert-success">Your Name is {{$firstname}} {{$middlename}} {{$lastname}} </h1>
 
     <hr>
 
