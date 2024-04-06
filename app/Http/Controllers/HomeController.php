@@ -11,8 +11,9 @@ class HomeController extends Controller
 
     function ShowHome()
     {
-        $data = array('Dhaka', 'Comilla', 'Noakhali', 'Chandpur', 'Laksmipur', 'Sylhet');
+        $City = array(/*'Dhaka', 'Comilla', 'Noakhali', 'Chandpur', 'Laksmipur', 'Sylhet'*/);
+        $Country = array('Bangladesh', 'India', 'Pakistan', 'Srilanka', 'Nepal', 'Bhutan');
 
-        return view('Home', ['dataKey' => $data]);
+        return view('Home', ['CityKey' => $City, 'CountryKey' => $Country]);
     }
 }

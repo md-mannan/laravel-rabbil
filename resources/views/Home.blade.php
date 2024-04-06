@@ -17,11 +17,22 @@
 
             <div class="card-body">
 
-                <select>
-                    @foreach ($dataKey as $data )
-                    <option>{{$data}}</option>
-                    @endforeach
-                </select>
+                <ol>
+                    <!-- if Empty -->
+                    @forelse ( $CityKey as $City )
+                    <li>{{$City}}</li>
+                    @empty
+                    <p>Data Not Found</p>
+                    @endforelse
+                </ol>
+                <ol>
+                    <!-- if Data Available -->
+                    @forelse ( $CountryKey as $Country )
+                    <li>{{$Country}}</li>
+                    @empty
+                    <p>Data Not Found</p>
+                    @endforelse
+                </ol>
             </div>
         </div>
 
