@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\SingleActionController;
+use App\Http\Controllers\PhotoController;
 use Illuminate\Support\Facades\Route;
 
-// Single Action Controller __invoke()
-Route::get('/', SingleActionController::class);
+// // Resource Controller GET only
+
+Route::resource('/photos', PhotoController::class);
