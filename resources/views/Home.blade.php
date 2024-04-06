@@ -16,12 +16,24 @@
             <!-- For loop with Blade View -->
 
             <div class="card-body">
-                <!-- For if and ifelse else in Blade view -->
+                <!-- Array Loop Property 
+
+                loop->index: Returns the zero-based index of the current loop iteration.
+                loop->iteration: Returns the current loop iteration count (starts from 1).
+                loop->remaining: Returns the number of iterations remaining in the loop.
+                loop->count: Returns the total number of items in the loop.
+                loop->first: Returns true if the current iteration is the first in the loop.
+                loop->last: Returns true if the current iteration is the last in the loop.
+                loop->depth: Returns the current depth of the loop nesting.
+                -->
                 @if($LoginStatusKey==true)
                 <ol>
                     <!-- if Data Available -->
                     @forelse ( $CountryKey as $Country )
-                    <li>{{$Country}}</li>
+
+                    <li start="{{$loop->index}}">{{$Country}}</li>
+                    {{$loop->count}}
+                    @break
                     @empty
                     <p>Data Not Found</p>
                     @endforelse
