@@ -11,8 +11,9 @@
 <body style="background:#eee;">
     <div class="container ">
 
-        <!-- Sub View -->
-        @include('sub-view.Menu')
+        <!-- Includeif & Include First Sub View -->
+        @includeif(['sub-view.Menu'])
+        @includeFirst(['sub-view.Menu','sub-view.Footer'])
 
 
         <div style="min-height:80vh;background:#fff">
