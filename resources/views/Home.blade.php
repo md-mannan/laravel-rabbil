@@ -11,9 +11,10 @@
 <body style="background:#eee;">
     <div class="container ">
 
-        <!-- Includeif & Include First Sub View -->
-        @includeif('sub-view.Menu')
-        @includeFirst(['sub-view.Menu','sub-view.Footer'])
+        <!-- Includewhen and Includeunless Sub View -->
+        @includeWhen(false,'sub-view.Menu',['some'=>'passed data'])
+        @includeWhen(true,'sub-view.Menu',['some'=>'passed data'])
+
 
 
         <div style="min-height:80vh;background:#fff">
@@ -27,8 +28,8 @@
 
         </div>
 
-
-        @include('sub-view.Footer',['FooterText'=>'Data passed By Sub View'])
+        @includeUnless(true,'',['footerText'=>'&copy;Copyright By Bangladesh Govt. 2023-2030'])
+        @includeUnless(false,'sub-view.Footer',['FooterText'=>'&copy;Copyright By Bangladesh Govt. 2023-2030'])
 
 
     </div>
