@@ -1,9 +1,6 @@
 <?php
 
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
-//Pass data and Display in Blade view
-
-
-Route::get('/', [HomeController::class, 'ShowHome']);
+Route::get('/', [SiteController::class, 'HomePage']);

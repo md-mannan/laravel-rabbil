@@ -1,40 +1,5 @@
-<!doctype html>
-<html lang="en">
+@extends('layout.MasterLayout');
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-
-<body style="background:#eee;">
-    <div class="container ">
-
-        <!-- Includewhen and Includeunless Sub View -->
-        @includeWhen(false,'sub-view.Menu',['some'=>'passed data'])
-        @includeWhen(true,'sub-view.Menu',['some'=>'passed data'])
-
-
-
-        <div style="min-height:80vh;background:#fff">
-
-
-
-
-
-
-
-
-        </div>
-
-        @includeUnless(true,'',['footerText'=>'&copy;Copyright By Bangladesh Govt. 2023-2030'])
-        @includeUnless(false,'sub-view.Footer',['FooterText'=>'&copy;Copyright By Bangladesh Govt. 2023-2030'])
-
-
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-
-</html>
+<!-- Layout Inharitance -->
+<!-- Title -->
+@section('titleKey','Home Page')
