@@ -24,23 +24,10 @@
 
 
 
-
-
-
-
-
-
-
-
         </div>
 
 
-
-
-
-
-
-        @include('sub-view.Footer')
+        @include('sub-view.Footer',['FooterText'=>'Data passed By Sub View'])
 
 
     </div>
