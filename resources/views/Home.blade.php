@@ -12,7 +12,7 @@
     <div class="container ">
 
         <!-- Includeif & Include First Sub View -->
-        @includeif(['sub-view.Menu'])
+        @includeif('sub-view.Menu')
         @includeFirst(['sub-view.Menu','sub-view.Footer'])
 
 
