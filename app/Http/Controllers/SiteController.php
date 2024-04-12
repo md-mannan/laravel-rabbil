@@ -6,8 +6,20 @@ use Illuminate\Http\Request;
 
 class SiteController extends Controller
 {
-    function HomePage()
+    function ShowHome()
     {
-        return view('Home');
+        return view('home');
+    }
+    function ShowAbout()
+    {
+        return view('about');
+    }
+    function ShowService()
+    {
+        return view('service');
+    }
+    function ShowProtfolio()
+    {
+        return view('protfolio');
     }
 }

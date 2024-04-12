@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <div class="alert alert-success">This is Bootstrap 5</div>
+        @yield('Nav')
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
