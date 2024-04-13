@@ -18,7 +18,8 @@ return new class extends Migration
             // $table->renameColumn('visitor', 'visitor_ip_address');
             // $table->dropColumn('created_date');
             // $table->string('email')->after('id');
-            $table->dropColumn('confirmed');
+            // $table->dropColumn('confirmed');
+            $table->binary('avater')->after('city')->nullable();
         });
     }
 
