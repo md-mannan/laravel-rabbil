@@ -13,24 +13,22 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
-            $table->timestamps();
+        Schema::table('all_tables', function (Blueprint $table) {
+            // $table->text('name', 300)->change();
+            // $table->renameColumn('visitor', 'visitor_ip_address');
+            // $table->dropColumn('created_date');
+            // $table->string('email')->after('id');
+            $table->dropColumn('confirmed');
         });
     }
 
-    /**
+    /**clear
      * Reverse the migrations.
      *
      * @return void
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        //
     }
 };
