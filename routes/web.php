@@ -18,3 +18,8 @@ Route::get('/', [SiteController::class, 'ShowHome']);
 Route::get('/about', [SiteController::class, 'ShowAbout']);
 Route::get('/service', [SiteController::class, 'ShowService']);
 Route::get('/protfolio', [SiteController::class, 'ShowProtfolio']);
+Route::get('/userdata', [SiteController::class, 'ShowData']);
+Route::get('/useraddform', function () {
+    return view('userAdd');
+});
+Route::post('/insert', [SiteController::class, 'onInsert']);

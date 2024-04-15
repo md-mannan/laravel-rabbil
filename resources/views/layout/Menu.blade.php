@@ -20,5 +20,8 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{ url('/protfolio') }}">Protfolio</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{{ url('/userdata') }}">User Data</a>
+                </li>
             </ul>
 </nav>
